@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FFFFFF</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#7784d9</color>
+    <color name="grey">#a4a4a4</color>
+    <color name="textGreen">#66BB6A</color>
+
+    <color name="white">#FFFFFF</color>
+
+    <color name="blackclr">#000000</color>
+    <color name="whiteclr">#ffffff</color>
+
+    <color name="bgRowBackgroung">#FA315B</color>
+
+
+</resources>

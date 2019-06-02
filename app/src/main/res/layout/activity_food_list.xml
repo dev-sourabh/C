@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home">
+
+    <RelativeLayout
+        android:id="@+id/topLayout"
+        android:layout_width="match_parent"
+        android:layout_height="116dp"
+        android:background="@color/blackclr">
+        <!--Arrow Button -->
+        <!-- <ImageView
+            android:id="@+id/back"
+            android:onClick="backtopriviouslayout"
+            android:layout_width="50dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_back_animated"/>-->
+
+        <com.mancj.materialsearchbar.MaterialSearchBar
+            android:id="@+id/searchBar"
+            android:layout_width="353dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="65dp"
+            android:layout_centerHorizontal="true"
+            android:background="@color/blackclr"
+            app:mt_hint="Enter your food"
+            app:mt_speechMode="false" />
+
+        <Switch
+            android:id="@+id/vegSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="0dp"
+            android:layout_marginBottom="75dp"
+            android:switchPadding="10dp"
+            android:text="@string/veg_only"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="@color/whiteclr"
+            android:theme="@style/CustomSwitch"
+            tools:ignore="RtlHardcoded" />
+    </RelativeLayout>
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:layout_width="match_parent"
+        android:id="@+id/swipe_layout"
+        android:layout_below="@+id/topLayout"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_food"
+            android:scrollbars="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</RelativeLayout>

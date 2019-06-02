@@ -1,0 +1,62 @@
+<resources>
+    <string name="app_name">FoodCubo</string>
+    <string name="delivery_location">Delivery Location</string>
+    <string name="sign_up_page">Order from a wide range of restaurants</string>
+    <string name="sign_up_page_msg">New to FOODCUBO:</string>
+    <string name="sign_up_page_cont">Continue</string>
+
+
+    <string name="user_name_hint">Name</string>
+    <string name="nav_tv_home">Home </string>
+    <string name="nav_tv_home_address">Address</string>
+    <string name="nav_tv_nearby_store">Nearby Store</string>
+    <string name="nav_tv_cart">Cart</string>
+    <string name="nav_tv_fav">Favorites</string>
+    <string name="nav_tv_orders">Orders</string>
+    <string name="nav_tv_update_name">Update Name</string>
+    <string name="nav_tv_signout">Sign Out</string>
+    <string name="nav_tv_settings">Settings</string>
+    <string name="nav_change_home_address">Change Home Address</string>
+    <string name="nav_change_home_address_msg">Please fill all information</string>
+    <string name="nav_update_name">Update Name</string>
+    <string name="nav_update_name_msg">Please fill all information</string>
+    <string name="nav_settings_header">Settings</string>
+    <string name="restuarant_list_recommendation_header">Recommendations for you</string>
+    <string name="header_restuarant_list">Delivery restaurants</string>
+    <string name="header_restuarant_list_see_all">See all</string>
+    <string name="detail_retaurant_list_ratings_header">Delivery Rating For Last 8 Orders</string>
+    <string name="detail_retaurant_list_delivery_place_header">Delivery Food To</string>
+    <string name="dish_type_veg">Veg Only</string>
+    <string name="dish_type_best_sellers">Bestsellers</string>
+    <string name="menu_name">In Salad</string>
+    <string name="food_name">Aloo mixed curry</string>
+    <string name="food_price_full">Rs 299.00</string>
+    <string name="food_indegridients">Aloo,Tomato Gravy</string>
+    <string name="food_dish_customization">Customization available</string>
+    <string name="bt_add_food_dish">Add</string>
+
+    <string name="nav_tv_header">Browse Places</string>
+    <string name="search_hint">Search</string>
+    <string name="search_hint_restuarants">Search for restuarants,cusine or dishes near your location</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+
+    <string name="FACEBOOK_APP_ID">258082951710531</string>
+    <string name="ACCOUNT_KIT_CLIENT_TOKEN">95b44d2a5b9eebef40a85a0f95192973</string>
+
+    <string name="title_activity_nearby_store">Map</string>
+    <string name="title_activity_tracking_order">Map</string>
+
+
+    <!--New Strings-->
+    <string name="veg_only">Veg Only </string>
+    <string name="title_activity_bottom_sheet">BottomSheetActivity</string>
+    <string name="title_activity_codpayment_method">CODPaymentMethod</string>
+
+    <string name="user_location">Your Location</string>
+    <string name="user_change">Change</string>
+    <string name="app_label">Food Cubo</string>
+    <string name="user_address_hint">Your delivery address here</string>
+
+</resources>

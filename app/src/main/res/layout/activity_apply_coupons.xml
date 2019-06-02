@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ededed"
+        android:padding="15dp"
+        android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="18dp"
+        android:background="@drawable/bg_border1">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#00ffffff"
+            android:layout_marginRight="10dp"
+            android:hint="Enter Coupon Code"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:textColor="#000000"
+            android:id="@+id/apply_coupon_edit"
+            android:layout_toLeftOf="@+id/tv_apply_coupon"
+            tools:ignore="Autofill,HardcodedText,RtlHardcoded,TextFields" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="APPLY"
+            android:id="@+id/tv_apply_coupon"
+            android:textStyle="bold"
+            android:textColor="#d99240"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            tools:ignore="HardcodedText,RtlHardcoded" />
+
+    </RelativeLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="3dp"
+            android:textColor="#000000"
+            android:id="@+id/tv_available_coupons"
+            android:text="AVAILABLE COUPONS"
+            tools:ignore="HardcodedText,RtlHardcoded" />
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/listCoupons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent" />
+</LinearLayout>

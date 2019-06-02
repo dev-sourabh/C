@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/swipe_layout"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <FrameLayout
+            android:id="@+id/toolbar_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/searchtoolbarBar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/colorPrimary" />
+            <com.foodcubo.foodcubo.foodcubo.materialsearchview.MaterialSearchView
+                android:layout_width="match_parent"
+                android:id="@+id/searchBar"
+                android:layout_height="wrap_content"/>
+<!--
+            <com.miguelcatalan.materialsearchview.MaterialSearchView
+                android:id="@+id/searchBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />-->
+        </FrameLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_below="@+id/toolbar_container"
+            android:id="@+id/recycler_search"
+            android:scrollbars="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </RelativeLayout>
+</android.support.v4.widget.SwipeRefreshLayout>

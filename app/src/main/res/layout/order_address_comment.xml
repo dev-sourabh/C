@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="8dp"
+    app:cardElevation="7dp">
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+          <fragment
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:id="@+id/place_autocomplete_fragment"
+              android:name="com.google.android.gms.location.places.ui.PlaceAutocompleteFragment"/>
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:hint="Comment"
+                android:layout_marginTop="20dp"
+                android:textColorHint="@color/blackclr"
+                android:text=""
+                android:textColor="@color/blackclr"
+                android:textSize="24sp"
+                android:inputType="textMultiLine"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:met_baseColor="@color/blackclr"
+                app:met_floatingLabel="highlight"
+                app:met_singleLineEllipsis="true"
+                app:met_primaryColor="@color/blackclr"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Delivery Method!!!"
+                tools:ignore="HardcodedText" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp">
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rdiShipToAddress"
+                    android:text="Current Location"
+                    tools:ignore="HardcodedText" />
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rdiHomeAddress"
+                    android:text="Ship To Home Address"
+                    tools:ignore="HardcodedText" />
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Payment Method!!!"
+                android:layout_marginTop="20dp"
+                tools:ignore="HardcodedText" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp">
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Cash On Delivery"
+                    tools:ignore="HardcodedText" />
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="PayPal"
+                    tools:ignore="HardcodedText" />
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Balance"
+                    tools:ignore="HardcodedText" />
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+
+</android.support.v7.widget.CardView>
